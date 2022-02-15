@@ -217,18 +217,18 @@ app.all('/a', function (req, res) {
 //     res.end();
 // });
 
-app.all('/a/tag[\-]values', function (req, res) {
-    setCORSHeaders(res);
-    console.log(req.url);
-    console.log(req.body);
-
-    if (req.body.key == 'City') {
-        res.json(cityTagValues);
-    } else if (req.body.key == 'Country') {
-        res.json(countryTagValues);
-    }
-    res.end();
-});
+// app.all('/a/tag[\-]values', function (req, res) {
+//     setCORSHeaders(res);
+//     console.log(req.url);
+//     console.log(req.body);
+//
+//     if (req.body.key == 'City') {
+//         res.json(cityTagValues);
+//     } else if (req.body.key == 'Country') {
+//         res.json(countryTagValues);
+//     }
+//     res.end();
+// });
 
 app.listen(3333);
 
